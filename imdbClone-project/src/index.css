@@ -8,11 +8,13 @@
   font-family: 'Kanit', sans-serif;
 }
 
+/*navbar*/
 .navbar {
   display: flex;
   background-color: rgba(1, 1, 1, 0.8);
-  gap: 2rem;
+  box-shadow:2px 2px 4px rgba(3, 93, 226, 0.8);
   align-items: center;
+  gap: 3rem;
   justify-content: center;
   padding: 1.4rem 7%;
   position: fixed;
@@ -28,9 +30,82 @@
 
 .navbar .navbar-logo {
   position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: rgb(3, 93, 226);
 }
 
 .navbar .navbar-nav a{
   display: inline-block;
-  margin: 0 1.4rem;
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #035de2;
+}
+
+/*.navbar .navbar-nav .active {
+  color: #035de2;
+  border-bottom: 0.1rem solid #035de2;
+}*/
+
+/*.navbar .navbar-nav a:hover::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #035de2;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}*/
+
+/*.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}*/
+/*Navbar End*/
+
+/*Hero*/
+.hero {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #000;
+}
+
+.hero::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.5;
+  background:url("../public/img/bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.hero .content {
+  position: relative;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.hero .content p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
 }

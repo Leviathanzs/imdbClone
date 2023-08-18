@@ -4,7 +4,7 @@ export default function Header () {
             <a href="#" className="navbar-logo">OMDB<span>FILM</span></a>
 
             <div className="navbar-nav">
-                <a href="#">Home</a>
+                <a href="#" className="active">Home</a>
                 <a href="#">Film</a>
             </div>
         </div>
