@@ -89,13 +89,15 @@
   height: 100%;
   z-index: 0;
   opacity: 0.5;
-  background:url("../public/img/bg.jpg") no-repeat center center;
+  background:url("/img/bg.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .hero .content {
+  display: flex;
   position: relative;
   max-width: 60rem;
+  grid-row: 1/2;
 }
 
 .hero .content h1 {
@@ -104,8 +106,50 @@
   font-weight: 500;
 }
 
+.hero .content .main-content {
+  padding: 0.5rem 1.5rem;
+}
+
+.hero .content .main-content a {
+  display: inline-block;
+  color: #000;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.hero .content .main-content .btn {
+  margin-top: 1rem;
+  box-shadow:  1px 1px 2px rgba(1, 1, 1, 0.8);;
+}
+
+.hero .content .main-content .btn:hover {
+  color: #000;
+  background-color: #035de2;
+}
+
+.hero .content h1 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.8);
+}
+
 .hero .content p {
   color: #fff;
   font-size: 1.2rem;
   font-weight: 300;
+  text-align: justify;
+  text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.8);
 }
+
+.hero .content-image img {
+  margin-left: 2rem;
+  width: auto;
+  height: 250px;
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.8);
+  border-radius: 0.8rem;
+}
+
+
