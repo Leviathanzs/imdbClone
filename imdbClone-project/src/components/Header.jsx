@@ -1,12 +1,23 @@
-export default function Header () {
-    return (
-        <div className="navbar">
-            <a href="#" className="navbar-logo">OMDB<span>MOVIE</span></a>
+import {Navbar, Nav, Container} from 'react-bootstrap'
+import {NavLink} from 'react-router-dom'
 
-            <div className="navbar-nav">
-                <a href="#" className="active">Home</a>
-                <a href="#">Movie</a>
-            </div>
-        </div>
+const Header = () => {
+    return (
+        <Navbar expand="lg" className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#home">OMDb</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mx-auto text-center">
+                <div className="nav-link">
+                    <NavLink to={''}>Home</NavLink>
+                    <NavLink to={'film'}>Film</NavLink>
+                </div>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     )
 }
+
+export default Header
