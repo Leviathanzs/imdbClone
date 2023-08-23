@@ -14,6 +14,9 @@ const Header = () => {
                     <NavLink to={'film'}>Film</NavLink>
                 </div>
             </Nav>
+            <div className="text-center">
+                <button className="btn btn-outline-primary rounded-1">Subscribe</button>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
